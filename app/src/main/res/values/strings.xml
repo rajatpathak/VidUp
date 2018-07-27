@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VidUp</string>
+
+    <string name="facebook_app_id">1723929424342359</string>
+    <string name="fb_login_protocol_scheme">1723929424342359</string>
+
+    <!-- Button text -->
+
+    <string name="server_client_id">AIzaSyAv8HeTihir6_bghfCfiY1jQxbzLlF79UY</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+
+    <string name="youttube_key">AIzaSyAv8HeTihir6_bghfCfiY1jQxbzLlF79UY</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title_activity_youtube">Youtube</string>
+
+
+
+    <string name="rotate_warning">Oops..! To film, rotate camera to landscape mode</string>
+    <string name="cancel_string">you will lose the video if not uploaded do you want to proceed?</string>
+
+</resources>

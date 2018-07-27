@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <!--header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Account"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="32dp"
+                android:padding="5dp"
+                android:backgroundTint="#555555"
+                android:tint="@color/white"
+                android:layout_height="32dp"
+                android:background="@drawable/circle_bg"
+                android:src="@drawable/help" />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!--Account login buttons-->
+
+        <!--Facebook Button-->
+        <LinearLayout
+            android:id="@+id/fblayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="4dp"
+                android:elevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/facebooklogo" />
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/login_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/facebookTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingLeft="10dp"
+                                android:paddingBottom="2dp"
+                                android:textSize="18dp"
+                                android:text="Facebook" />
+                          <TextView
+                              android:id="@+id/facebookStatus"
+                              android:layout_below="@+id/facebookTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingLeft="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Facebook" />
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_action_right" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <!--LinkedIn Button-->
+        <LinearLayout
+            android:id="@+id/linkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="4dp"
+                android:elevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/linkedinlogo" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:text="Linked In"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title"
+                            android:background="@color/white"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:text="Logged In" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_action_right" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        <!--Youtube Button-->
+        <LinearLayout
+            android:id="@+id/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="4dp"
+                android:elevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/youtubelogo" />
+
+                    <FrameLayout
+                        android:id="@+id/youtubeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/youtubeTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingLeft="10dp"
+                                android:paddingBottom="2dp"
+                                android:textSize="18dp"
+                                android:text="Youtube" />
+                            <TextView
+                                android:id="@+id/youttubeStatus"
+                                android:layout_below="@+id/youtubeTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingLeft="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Not Logged In" />
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_action_right" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/app_color"
+            android:src="@drawable/ic_action_signout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:text="Sign Out"
+            android:textColor="@color/app_color"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

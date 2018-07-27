@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinkedIn">
+
+    <TextView android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+
+    <TextView android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_margin="10dp"/>
+
+   <EditText android:id="@+id/etTitle"
+       android:background="@drawable/round_corner_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:hint="Title"
+       />
+
+   <EditText
+       android:id="@+id/etDescription"
+       android:background="@drawable/round_corner_border"
+       android:lines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+       android:hint="Description"
+       android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_margin="10dp"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:background="@color/app_color"/>
+
+</LinearLayout>
